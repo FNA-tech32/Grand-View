@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about Grand View - our vision, hospitality, and luxury accommodations.">
+  <title>About Us | Grand View</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { oswald: ['Oswald', 'sans-serif'] },
+          colors: { brand: { DEFAULT: '#0275d8', dark: '#025aa5' } }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body class="font-oswald bg-gray-50 text-gray-900 antialiased">
+
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#f7f5f5]/95 backdrop-blur border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+      <a href="../index.html" class="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-black">
+        Grand<sub class="text-brand text-lg sm:text-xl">View</sub>
+      </a>
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-6 lg:gap-8 uppercase text-sm lg:text-base">
+          <li><a href="../index.html" class="hover:text-brand border-b-2 border-transparent hover:border-brand transition">Home</a></li>
+          <li><a href="./reservation.html" class="hover:text-brand border-b-2 border-transparent hover:border-brand transition">Reservations</a></li>
+          <li><a href="#about" class="text-brand border-b-2 border-brand">About Us</a></li>
+          <li><a href="./contact.html" class="hover:text-brand border-b-2 border-transparent hover:border-brand transition">Contact Us</a></li>
+          <li><a href="./contact.html#book" class="bg-brand text-white px-4 py-2 rounded-sm hover:bg-brand-dark transition">Book Now</a></li>
+        </ul>
+      </nav>
+      <button id="menu-btn" type="button" class="md:hidden p-2 text-gray-800" aria-label="Toggle menu">
+        <i id="menu-open-icon" class="fas fa-bars text-xl"></i>
+        <i id="menu-close-icon" class="fas fa-times text-xl hidden"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden bg-[#f7f5f5] border-t border-gray-200">
+      <ul class="flex flex-col px-4 py-4 gap-4 uppercase text-lg">
+        <li><a href="../index.html" class="block py-2 hover:text-brand"><i class="fas fa-home mr-2"></i>Home</a></li>
+        <li><a href="./reservation.html" class="block py-2 hover:text-brand"><i class="fas fa-key mr-2"></i>Reservations</a></li>
+        <li><a href="#about" class="block py-2 text-brand"><i class="fas fa-hotel mr-2"></i>About Us</a></li>
+        <li><a href="./contact.html" class="block py-2 hover:text-brand"><i class="fas fa-phone mr-2"></i>Contact Us</a></li>
+        <li><a href="./contact.html#book" class="inline-block bg-brand text-white px-4 py-2 mt-1 hover:bg-brand-dark transition">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-20 md:pt-24">
+    <section id="about" class="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h3 class="text-3xl md:text-4xl capitalize font-semibold mb-3" data-aos="fade-right" data-aos-duration="1000">About Us</h3>
+        <hr class="w-24 md:w-40 h-1 bg-brand border-0 mx-auto mb-6">
+        <p class="text-base sm:text-lg leading-relaxed text-gray-700" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+          Grand View is a premier resort dedicated to putting every guest’s comfort first
+          and making your stay memorable in every way. Our main location is at 276 Charles
+          Avenue behind Alaba Oro, Lagos, with an alternative branch at Velvet Station, Sweden.
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-2xl sm:text-3xl md:text-4xl capitalize font-semibold text-center mb-3">Customers feedback about us</h3>
+        <hr class="w-24 md:w-40 h-1 bg-brand border-0 mx-auto mb-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <article class="text-center max-w-xs" data-aos="fade-right" data-aos-duration="1000">
+            <q class="block text-lg leading-relaxed mb-4">It has been really amazing staying here and i recommend this resort to all my fans.</q>
+            <img src="../images/joshua.jpg" alt="Anthony Joshua" class="hidden md:block w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow">
+            <p class="text-brand capitalize font-semibold">anthony joshua</p>
+          </article>
+          <article class="text-center max-w-xs" data-aos="fade-up" data-aos-duration="1000">
+            <q class="block text-lg leading-relaxed mb-4">The pool, the rooms, the reservation areas and lot more are just top notch.</q>
+            <img src="../images/shahrukh-khan.jpg" alt="Shahrukh Khan" class="hidden md:block w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow">
+            <p class="text-brand capitalize font-semibold">shahrukh khan</p>
+          </article>
+          <article class="text-center max-w-xs hidden lg:block" data-aos="fade-left" data-aos-duration="1000">
+            <q class="block text-lg leading-relaxed mb-4">Love the way the staffs are jovial and always ready to serve us, i am really glad i came here.</q>
+            <img src="../images/hart1.jpg" alt="Kelvin Hart" class="hidden md:block w-24 h-24 rounded-full object-cover mx-auto mb-3 shadow">
+            <p class="text-brand capitalize font-semibold">kelvin hart</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="./contact.html#book" class="inline-block border-2 border-brand px-6 py-3 uppercase tracking-widest font-semibold hover:bg-brand hover:text-white transition">
+          Book Now
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center lg:text-left">
+      <ul class="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 capitalize text-lg">
+        <li><a href="../index.html" class="hover:text-brand transition">Home</a></li>
+        <li><a href="./reservation.html" class="hover:text-brand transition">Reservations</a></li>
+        <li><a href="#" class="hover:text-brand transition">Help</a></li>
+        <li class="hidden md:inline"><a href="#" class="hover:text-brand transition">Terms &amp; Conditions</a></li>
+      </ul>
+      <ul class="hidden md:flex flex-col gap-2 capitalize text-lg">
+        <li><a href="#" class="hover:text-brand transition">For Members</a></li>
+        <li><a href="#" class="hover:text-brand transition">Profile</a></li>
+        <li><a href="./reservation.html#facilities" class="hover:text-brand transition">Facilities</a></li>
+        <li><a href="./contact.html" class="hover:text-brand transition">Contact Us</a></li>
+      </ul>
+      <div>
+        <p class="text-base sm:text-lg mb-4">Stay up to date with us and get amazing discounts by joining our exclusive newsletter list</p>
+        <form action="mailto:info@grandviewresort.com" method="POST" class="flex flex-col sm:flex-row gap-2 sm:items-center justify-center lg:justify-start">
+          <label for="email" class="font-semibold whitespace-nowrap">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email address" required class="flex-1 min-w-0 px-3 py-2 rounded-tr-2xl border-2 border-white bg-transparent text-white placeholder-gray-400 focus:outline-none focus:border-brand">
+          <button type="submit" class="px-4 py-2 bg-white text-gray-700 font-semibold capitalize rounded-tr-2xl hover:bg-brand hover:text-white transition">Sign up</button>
+        </form>
+        <div class="mt-6 flex justify-center lg:justify-start gap-8 text-2xl">
+          <a href="https://twitter.com/GrandViewResort" target="_blank" rel="noreferrer" class="hover:text-brand transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://web.facebook.com/GrandViewResort" target="_blank" rel="noreferrer" class="hover:text-brand transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/GrandViewResort/" target="_blank" rel="noreferrer" class="hover:text-brand transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
